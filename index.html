@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ömer Faruk Arlı | Yazılım Geliştirici</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS Dosyamız -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Üst Navigasyon -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span>&lt;/&gt;</span>
+                <span>Ömer Faruk</span>
+            </div>
+
+            <nav class="nav">
+                <a href="#home">Ana Sayfa</a>
+                <a href="#about">Hakkımda</a>
+                <a href="#skills">Yetenekler</a>
+                <a href="#projects">Projeler</a>
+                <a href="#contact">İletişim</a>
+            </nav>
+
+            <!-- Tema Değiştir Butonu -->
+            <button id="themeToggle" class="theme-toggle" aria-label="Tema Değiştir">
+                🌙
+            </button>
+
+            <!-- Mobil Menü Butonu -->
+            <button id="menuToggle" class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO / ANA SAYFA -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-hi">Merhaba, ben</p>
+                <h1>Ömer Faruk Arlı</h1>
+                <h2 class="hero-title">Yazılım Geliştirici & Web Developer</h2>
+                <p class="hero-desc">
+                    Modern web uygulamaları geliştiriyorum. ASP.NET Core, SQL Server, HTML, CSS ve JavaScript
+                    ile ölçeklenebilir ve kullanıcı dostu sistemler tasarlamayı seviyorum.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">Projelerime Bak</a>
+                    <a href="#contact" class="btn secondary-btn">Benimle İletişime Geç</a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                    <a href="mailto:ornekmail@example.com">Mail</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <!-- Buraya profil fotoğrafın varsa ekleyebilirsin -->
+                <div class="profile-circle">
+                    <span>&lt;coder /&gt;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="section-title">
+                <h2>Hakkımda</h2>
+                <p>Ben kimim, neler yapıyorum?</p>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    Merhaba, ben Ömer Faruk Arlı. Malatya Turgut Özal Üniversitesi'nde Yazılım Mühendisliği öğrencisiyim
+                    ve aynı zamanda web tabanlı projeler geliştiriyorum.
+                    Özellikle <strong>ASP.NET Core</strong>, <strong>SQL Server</strong>, <strong>HTML, CSS, JavaScript</strong>
+                    alanlarında projeler üretmeye odaklanıyorum.
+                </p>
+                <p>
+                    Kişisel hedefim, hem kurumsal hem de bireysel ölçekte kullanılan, 
+                    performanslı ve kullanıcı odaklı yazılımlar geliştirmek.
+                    Takım çalışmasına uyumlu, sorumluluk sahibi ve sürekli öğrenmeye açık bir geliştiriciyim.
+                </p>
+                <p>
+                    Boş zamanlarımda yeni teknolojileri inceler, algoritma soruları çözer ve tasarım
+                    tarafında kendimi geliştirmeye çalışırım.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- YETENEKLER -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Yetenekler</h2>
+                <p>Kullandığım teknolojiler ve odaklandığım alanlar</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, Responsive Tasarım</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p>ASP.NET Core, RESTful API, MVC, Entity Framework</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Veritabanı</h3>
+                    <p>SQL Server, MySQL, Veritabanı Tasarımı, Sorgu Optimizasyonu</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Diğer</h3>
+                    <p>Git & GitHub, Agile, Temel Linux, Tasarım Mantığı</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projeler</h2>
+                <p>Üzerinde çalıştığım bazı projeler</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Proje Kartı 1 -->
+                <article class="project-card">
+                    <h3>Gym Management System</h3>
+                    <p>
+                        ASP.NET Core ve SQL Server kullanarak geliştirdiğim, çok şubeli spor salonu yönetim sistemi.
+                        Üyelik, antrenman programları, ölçümler ve abonelik takibi içeriyor.
+                    </p>
+                    <div class="project-tags">
+                        <span>ASP.NET Core</span>
+                        <span>SQL Server</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">Kaynak Kodu (GitHub)</a>
+                </article>
+
+                <!-- Proje Kartı 2 -->
+                <article class="project-card">
+                    <h3>Ruhsat & Tapu Sorgulama Sistemi</h3>
+                    <p>
+                        Malatya Büyükşehir Belediyesi için geliştirilmiş, ruhsat ve tapu sorgulama
+                        ekranlarını içeren web tabanlı bir uygulama.
+                    </p>
+                    <div class="project-tags">
+                        <span>ASP.NET</span>
+                        <span>MVC</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">Detayları Gör</a>
+                </article>
+
+                <!-- Proje Kartı 3 -->
+                <article class="project-card">
+                    <h3>FitLife Web Arayüzü</h3>
+                    <p>
+                        Spor ve beslenme takibi için tasarlanmış modern bir web arayüzü. 
+                        Üyelik sistemi, su tüketimi, antrenman ve diyet planları modülleri içerir.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">Canlı Demo</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+   <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+        <div class="section-title">
+            <h2>İletişim</h2>
+            <p>Birlikte çalışmak istersen bana ulaşabilirsin</p>
+        </div>
+
+        <div class="contact-content">
+            
+            <!-- SOL TARAF (Bilgiler) -->
+            <div class="contact-info">
+                <p><strong>E-posta:</strong> omerfar926@gmail.com</p>
+                <p><strong>Konum:</strong> Malatya, Türkiye</p>
+                <p><strong>İlgi Alanlarım:</strong> Web geliştirme, ASP.NET Core projeleri</p>
+
+                <h3 class="social-title">Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-arl%C4%B1-598225265/?isSelfProfile=true" target="_blank">
+                        LinkedIn Profilim
+                    </a>
+
+                    <a href="https://www.instagram.com/omerfrar/" target="_blank">
+                        Instagram Profilim
+                    </a>
+
+                    <a href="https://github.com/omerfar65" target="_blank">
+                        GitHub Profilim
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Ömer Faruk Arlı. Tüm hakları saklıdır.</p>
+            <p class="footer-small">Bu site HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.</p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyamız -->
+    <script src="script.js"></script>
+</body>
+</html>
